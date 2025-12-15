@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FocusFlow | Focus Timer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="app">
+    <h1>FocusFlow</h1>
+    <p class="tagline">Focus. One session at a time.</p>
+
+    <!-- Add Task -->
+    <form id="task-form">
+      <input type="text" id="task-title" placeholder="New task..." required />
+      <input type="number" id="task-minutes" min="1" value="25"placeholder="Add minutes"  />
+      <button type="submit">Add</button>
+    </form>
+
+    <!-- Timer -->
+    <section class="timer">
+      <div id="timer-display">00:00</div>
+      <button id="start-btn">Start</button>
+    </section>
+
+    <!-- Tasks -->
+    <ul id="task-list"></ul>
+
+    <footer class="footer">
+      Built by <a href="https://jruiz132.github.io/portfolio-site/">me</a>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

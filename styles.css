@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: radial-gradient(circle at top, #111 0%, #000 60%);
+  color: #eaeaea;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 500px;
+  background: #0f0f0f;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.05),
+    0 30px 60px rgba(0,0,0,0.6);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin-bottom: 24px;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #161616;
+  color: #eaeaea;
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.timer {
+  text-align: center;
+  margin: 24px 0;
+}
+
+#timer-display {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #161616;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+li.active {
+  border-left: 4px solid #22c55e;
+}
+
+.task-info {
+  flex: 1;
+}
+
+.session-count {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.select-btn,
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #3b82f6;
+  margin-left: 6px;
+}
+
+.delete-btn:hover {
+  color: #ef4444;
+}
+
+.footer {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.footer a {
+  color: #3b82f6;
+}
